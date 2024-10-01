@@ -1,0 +1,31 @@
+:root {
+    --cell-color: #eeeeee;
+    --cell-color-done : #aaaaaa;
+    --cell-size: 50px;
+    --cell-gap: 2px;
+}
+
+.game table {
+    border-spacing: var(--cell-gap);
+}
+
+.game td {
+    background-color: var(--cell-color);
+    min-width: var(--cell-size);
+    max-width: var(--cell-size);
+    height: var(--cell-size);
+    text-align: center;
+    cursor: pointer;
+}
+
+.game td.hidden .icon {
+    display: none;
+}
+
+.game td.done {
+    background-color: var(--cell-color-done); 
+}
+
+.game td.empty {
+    background-color: transparent;
+}
